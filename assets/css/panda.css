@@ -1,0 +1,371 @@
+  .scene {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .panda {
+    width: 250px;
+    rotate: -15deg;
+    margin-bottom: -68px;
+  }
+  .panda__wrap {
+    position: relative;
+    z-index: 10;
+  }
+  .panda__actions {
+    display: flex;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .panda__paw-control {
+    background: transparent;
+    cursor: pointer;
+    height: 100%;
+    flex: 1;
+  }
+  .panda__paw--hidden {
+    display: none;
+  }
+  
+
+  .panda_face.hide { opacity: 0; }
+
+
+
+.sign {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.panda-2 {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  overflow: hidden;
+  transition: 2s;
+}
+
+.panda_inner {
+  height: 100%;
+}
+
+.panda_inner svg {
+  height: 100%;
+  width: auto;
+}
+
+.panda-button {
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: var(--yellow-3);
+  border: 3px solid var(--black-2);
+  position: relative;
+}
+
+.panda-button:hover {
+  border-width:2px 2px 4px 2px;
+  margin-top: 3px;
+  background-color: var(--yellow-6);
+}
+
+
+
+.panda_face {
+  position: relative;
+  height: 28px;
+  width: auto;
+  margin-top: -10px;
+}
+
+.panda_face {
+  opacity: 1;
+}
+
+.panda_face svg {
+  height: 100%;
+  width: auto;
+}
+
+.panda_white { fill: white; }
+.blue { fill: #009ece; }
+.green { fill: rgb(0, 95, 55); }
+.pink { fill: rgb(197, 0, 98);}
+.brown { fill: rgb(230, 65, 0);}
+.dark_brown { fill: rgb(53, 34, 27);}
+
+.panda-button:hover .panda_face {
+  animation: bop infinite 0.5s;
+}
+
+@keyframes bop {
+  0% {
+    top: 0;
+    transform: scale(1);
+  }
+  50% {
+    top: -5px;
+    transform: scale(0.95,1.05);
+  }
+  90% {
+    transform: scale(1.1,0.9);
+  }
+  100% {
+    top: 0;
+    transform: scale(1);
+  }
+}
+
+.panda-button.animate svg {
+  animation: spin infinite linear 0.5s;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-720deg);
+  }
+}
+
+@keyframes fadeout {
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 0;
+  }
+  100% { 
+    opacity: 0;
+    display: none;
+  }
+} 
+
+.panda-button:hover .fade_in,
+.panda_face.fade_in {
+  animation: fade_in forwards 0.5s;
+}
+
+@keyframes fade_in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.panda-button.animate {
+  transform-origin: bottom right;
+  animation: shake ease forwards 0.5s;
+}
+
+@keyframes shake {
+  0% { 
+    transform-origin: bottom right;
+    transform: translate(0,0) rotate(0deg);
+  }
+  40% { 
+    transform: translate(5px,0) rotate(45deg);
+  }
+  70% {
+    transform-origin: bottom right; 
+    transform: translate(5px,0) rotate(45deg);
+  }
+  85% { 
+    transform-origin: bottom left; 
+    transform: translate(0,0) rotate(-20deg);
+  }
+  95% { 
+    transform: translate(0,0) rotate(0deg);
+  }
+  100% { 
+    transform-origin: bottom right;
+    transform: translate(0,0) rotate(0deg);
+  }
+}
+
+
+.jump {
+    animation: jump 1.5s infinite ease;
+  }
+  @keyframes jump {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -40px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  .coin {
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .coin .front, .coin .back {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background: #ffbd0b;
+    border-radius: 50%;
+    border-top: 14px solid #ffd84c;
+    border-left: 14px solid #ffd84c;
+    border-right: 14px solid #d57e08;
+    border-bottom: 14px solid #d57e08;
+    transform: rotate(44deg);
+  }
+  .coin .front:before, .coin .back:before {
+    content: "";
+    margin: 71px 71px;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #f0a608;
+    border-radius: 50%;
+    border-bottom: 10px solid #ffd84c;
+    border-right: 10px solid #ffd84c;
+    border-left: 10px solid #d57e08;
+    border-top: 10px solid #d57e08;
+    z-index: 2;
+  }
+  .coin .front .currency, .coin .back .currency {
+    overflow: hidden;
+    position: absolute;
+    color: #ffbd0b;
+    font-size: 80px;
+    transform: rotate(-44deg);
+    line-height: 3.5;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-shadow: 0 6px 0 #cb7407;
+    z-index: 3;
+    border-radius: 50%;
+  }
+  .coin .front .currency:after, .coin .back .currency:after {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 80px;
+    margin: 20px -65px;
+    box-shadow: 100px -46px 0 -20px rgba(255, 255, 255, 0.22), 170px -20px 0 -32px rgba(255, 255, 255, 0.19);
+    transform: rotate(-50deg);
+    animation: shine 1.5s infinite ease;
+  }
+  @keyframes shine {
+    0% {
+      margin: 20px -65px;
+    }
+    50% {
+      margin: 70px -85px;
+    }
+    100% {
+      margin: 20px -65px;
+    }
+  }
+  .coin .front .shapes, .coin .back .shapes {
+    transform: rotate(-44deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .coin .front .shapes div, .coin .back .shapes div {
+    width: 40px;
+    height: 8px;
+    background: #d57e08;
+    border-top: 4px solid #c47207;
+    margin: 150px 14px;
+  }
+  .coin .front .shapes div:before, .coin .back .shapes div:before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    background: #d57e08;
+    border-top: 4px solid #c47207;
+    margin: -20px 0;
+  }
+  .coin .front .shapes div:after, .coin .back .shapes div:after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    background: #d57e08;
+    border-top: 4px solid #c47207;
+    margin: 15px 0;
+  }
+  .coin .front .shape_l, .coin .back .shape_l {
+    float: left;
+  }
+  .coin .front .shape_r, .coin .back .shape_r {
+    float: right;
+  }
+  .coin .front .top, .coin .back .top {
+    font-size: 40px;
+    color: #d67f08;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-top: 20px;
+  }
+  .coin .front .bottom, .coin .back .bottom {
+    font-size: 40px;
+    color: #d67f08;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+  }
+  
+  .coin .shadow {
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    left: 0;
+    bottom: -50px;
+    border-radius: 50%;
+    z-index: -1;
+    margin-top: 30px;
+    animation: swift 1.5s infinite ease;
+  }
+  @keyframes swift {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+
+

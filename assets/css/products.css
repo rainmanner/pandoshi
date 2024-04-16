@@ -1,0 +1,693 @@
+.inside {
+    width: 100%;
+  }
+  
+  .telephone {
+      margin: 50px auto;
+      position: relative;
+      background: #e0e5ec;
+      width: 240px;
+      height: 480px;
+      border-radius: 20px;
+      border: 6px solid rgba(0, 0, 0, 0.03);
+      display: -webkit-box;
+      box-shadow: 19px 20px 60px #c7c7c7b8, 20px 20px 60px #ffa98d;
+      scale: 1.4;
+  }
+        .top-phone {
+          position: absolute;
+          top: 0;
+          right: 65px;
+          width: 100px;
+          height: 18px;
+          background: rgba(0, 0, 0, 0.03);
+          border-bottom-left-radius: 9px;
+          border-bottom-right-radius: 9px;
+      }
+  
+  .top-elements i {
+      font-size: 12px;
+      color: #0000005c;
+      z-index: 50;
+      position: absolute;
+      right: 9px;
+      top: 4px;
+  }
+  
+  .top-elements span {
+    position: absolute;
+    color: #0000005c;
+    top: 4px;
+    left: 16px;
+    font-size: 10px;
+  }
+  
+  .home {
+    width: 60px;
+    height: 3px;
+    background: black;
+    border-radius: 20px;
+    bottom: 7px;
+    background: #0000005c;
+    position: absolute;
+  }
+  
+  .wallet-top {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .wallet-mid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .wallet-mid .box {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--yellow-4);
+    background: var(--yellow-4);
+    border-radius: 6px;
+    color: var(--white);
+    box-shadow: 3px 2px 8px #adadadb0, -4px -5px 18px #ffffff;
+  }
+  button {
+    border: 0;
+    transition: 0.3s;
+  }
+  
+  .wallet-mid .box:hover {
+    background: var(--yellow-6);
+  }
+  
+  .wallet-mid .box p {
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    color: white;
+  }
+
+  
+  h3 {
+    color: #00000061;
+    font-size: 13px;
+  }
+  
+  .wallet-mid .box i {
+    border-radius: 50px;
+  }
+  
+  .wallet-mid .box:focus {
+    outline: none;
+    background: var(--yellow-6);
+  }
+  
+  .wallet-mid .box:first-child {
+    margin-right: 10px;
+  }
+  
+  .card span {
+    position: absolute;
+    left: 6px;
+    bottom: 3px;
+    font-weight: 300;
+    font-size: 10px;
+    color: white;
+  }
+  
+  .card h2 {
+    color: white;
+    font-weight: 300;
+    font-family: inherit;
+  }
+  
+  .card i {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    font-size: 22px;
+    color: white;
+  }
+  
+  .wallet-top h1 {
+    color: #00000061;
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .wallet-top .card {
+    background-image: linear-gradient(120deg, var(--primary) 0%, var(--yellow-4) 100%);
+    width: 100%;
+    height: 110px;
+    box-shadow: 0px 0px 10px 1px #fda085;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    position: relative;
+    border: 1px solid var(--yellow-4);
+  }
+  
+  .checkbox .tag {
+    color: #595959;
+    display: block;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    width: 120px;
+  }
+  
+  .checkbox label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #00000061;
+    font-size: 14px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .checkbox .input-assumpte {
+    display: none;
+  }
+  .input-assumpte + label:after {
+    background-color: #ffffff;
+    border-radius: 50px;
+    border: 1px solid #e6e6e6;
+    display: inline-block;
+    transition-duration: 0.3s;
+    width: 16px;
+    height: 16px;
+    content: '';
+    margin-left: 10px;
+  }
+  .input-assumpte:checked + label:after {
+    background-color: var(--yellow-4);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+  }
+  
+  .phone-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 15px;
+    background: #f3f3f300;
+      margin-left: 5px;
+      box-shadow: 1px 2px 3px #adadadb0, -3px -2px 5px #ffffffc7;
+  }
+  
+  .phone-bar .bar-inside {
+    background-image: linear-gradient(120deg, var(--primary) 0%, var(--yellow-4) 100%);    border-radius: 15px;
+    height: 100%;
+  }
+  
+  .fuel .bar-inside {
+    width: 7%;
+  }
+  .cat .bar-inside {
+    width: 90%;
+  }
+  .food .bar-inside {
+    width: 55%;
+  }
+  .spend i {
+    color: #00000061;
+    width: 20px;
+  }
+  
+  .spend {
+    margin-bottom: 10px;
+  }
+
+  /* panda chain styling
+
+  @charset "utf-8";
+/* CSS Document */
+
+/******* Common Element CSS Start ******/
+
+  .chain-container {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    height: 560px;
+  }
+  .chain-animation {
+    margin: 0px auto;
+    width: 480px;
+    height: 480px;
+    position: relative;
+  }
+  .big-circle {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 3px solid var(--orange-3);
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    animation: Rotate 20s linear infinite;
+    -webkit-animation: Rotate 20s linear infinite;
+  }
+  .icon-block {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    background-image: linear-gradient(180deg, #ffa78b 0%, #ffa98d 100%);
+    -webkit-background-image: linear-gradient(180deg, #ffa78b 0%, #ffa98d 100%);
+    box-shadow: 0 2px 4px 0 var(--orange-deep);
+    -webkit-box-shadow: 0 2px 4px 0 var(--orange-deep);
+  }
+  .icon-block i {
+    margin: 0px auto;
+    animation: Rotate-reverse 20s linear infinite;
+    -webkit-animation: Rotate-reverse 20s linear infinite;
+    font-style: normal !important;
+  }
+  .icon-block:first-child {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .icon-block:nth-child(2) {
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+  }
+  .icon-block:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+  }
+  .icon-block:nth-child(4) {
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  /* circle content */
+  .circle {
+    animation: circle-rotate 20s linear infinite;
+    -webkit-animation: circle-rotate 20s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    width: 75%;
+    height: 75%;
+    border: 3px solid var(--orange-3);
+    border-radius: 50%;
+  }
+  .circle .icon-block img {
+    animation: img-rotate 20s linear infinite;
+    -webkit-animation: img-rotate 20s linear infinite;
+  }
+  /* center logo */
+  .center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+  .center-logo h1 {
+    text-shadow: 1px 2px 0 var(--orange-deep);
+  }
+  
+  /* keyframe animation */
+  
+  @keyframes Rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes Rotate {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes Rotate-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  
+  @-webkit-keyframes Rotate-reverse {
+    from {
+      -webkit-transform: rotate(360deg);
+    }
+    to {
+      -webkit-transform: rotate(0deg);
+    }
+  }
+  
+  @keyframes circle-rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(405deg);
+    }
+  }
+  
+  @-webkit-keyframes circle-rotate {
+    from {
+      -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    }
+    to {
+      -webkit-transform: translate(-50%, -50%) rotate(405deg);
+    }
+  }
+  
+  @keyframes img-rotate {
+    from {
+      transform: rotate(-45deg);
+    }
+    to {
+      transform: rotate(-405deg);
+    }
+  }
+  
+  @-webkit-keyframes img-rotate {
+    from {
+      -webkit-transform: rotate(-45deg);
+    }
+    to {
+      -webkit-transform: rotate(-405deg);
+    }
+  }
+
+  @media only screen and (max-width: 550px) {
+    .chain-animation {
+        height: 80vw;
+        width: 80vw;
+    }
+
+    .chain-text {
+        font-size: 9vw;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .telephone {
+        scale: 1.2;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .telephone-container {
+        padding-top: 20px;
+    }
+}
+
+/* swap section */
+
+/* Uniswap font */
+@import url('../../css2-2');
+
+
+.swap-input, .swap-button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: 0;
+    background-color: #0000;
+  }
+  
+  .swap-input {
+    width: 100%;
+  }
+
+  .swap-input:focus {
+    outline: none;
+  }
+
+
+.swap-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .swap-section {
+        padding-top: 20px;
+      }
+}
+
+.uniswapSection {
+  font-family: 'Inter', sans-serif;
+}
+
+.uniswap {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 24px;
+  background: rgb(255, 255, 255);
+  box-shadow:
+    rgb(0 0 0 / 1%) 0px 0px 1px,
+    rgb(0 0 0 / 4%) 0px 4px 8px,
+    rgb(0 0 0 / 4%) 0px 16px 24px,
+    rgb(0 0 0 / 1%) 0px 24px 32px;
+}
+
+.uniswapHead {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem 0.5rem;
+}
+
+.uniswapSettings {
+  position: absolute;
+  color: var(--gray-6);
+  top: 48px;
+  right: 16px;
+  z-index: 999;
+  display: none;
+  grid-gap: 16px;
+  padding: 16px;
+  border-radius: 12px;
+  background-color: rgb(237, 238, 242);
+  border: 1px solid rgb(206, 208, 217);
+  box-shadow:
+    rgb(0 0 0 / 1%) 0px 0px 1px,
+    rgb(0 0 0 / 4%) 0px 4px 8px,
+    rgb(0 0 0 / 4%) 0px 16px 24px,
+    rgb(0 0 0 / 1%) 0px 24px 32px;
+}
+
+.uniswapSettings h4 {
+    color: var(--gray-6);
+}
+
+#uniswapSettingsTrigger:checked ~ .uniswapSettings {
+  display: grid;
+}
+
+.settingField, .settingFieldInline {
+  font-size: 14px;
+}
+
+.settingField {
+  display: grid;
+  grid-gap: 8px;
+}
+
+.settingFieldInline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uniswapSettingsSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.15rem;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+}
+
+.uniswapSettingsSwitch::before, .uniswapSettingsSwitch::after {
+  padding: .3rem .4rem;
+  border-radius: 9px;
+}
+
+.uniswapSettingsSwitch::before {
+  content: "On";
+}
+
+#toggleExpertMode:not(:checked) ~ label[for="toggleExpertMode"]::after {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#toggleExpertMode:checked ~ label[for="toggleExpertMode"]::before {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#disableMultiHops:not(:checked) ~ label[for="disableMultiHops"]::after {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+#disableMultiHops:checked ~ label[for="disableMultiHops"]::before {
+  color: #ffff;
+  background-color: rgb(136, 141, 155);
+}
+
+.uniswapSettingsSwitch::after {
+  content: "Off";
+}
+
+.settingField input {
+  padding: 8px 16px;
+  font-size: 16px;
+  text-align: right;
+  border-radius: 36px;
+  border: 1px solid rgb(206, 208, 217);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapBody {
+  display: grid;
+  grid-gap: 12px;
+  padding: 8px;
+}
+
+.uniswapArrow {
+  position: relative;
+  left: 50%;
+  left: calc(50% - 16px);
+  height: 32px;
+  width: 32px;
+  margin-top: -14px;
+  margin-bottom: -14px;
+  padding: 4px;
+  border-radius: 12px;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapArrow svg {
+    vertical-align: baseline;
+}
+
+.uniswapField {
+  display: flex;
+  padding: 1rem 1rem 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgb(237, 238, 242);
+  background-color: rgb(247, 248, 250);
+}
+
+.uniswapSelector {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 2.4rem;
+  padding: 0px 8px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+  min-width: fit-content;
+}
+
+.uniswapSelectorLogo {
+  width: 24px;
+  height: 24px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+  border-radius: 24px;
+}
+
+.uniswapTextInput {
+  flex: 1 1 auto;
+  font-size: 24px;
+  text-align: right;
+}
+
+.uniswapButton {
+  width: 100%;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: rgb(253, 234, 241);
+  color: rgb(213, 0, 102);
+}
+
+/* import from styles.css
+
+.cf_parallax_image {
+  overflow: hidden;
+}
+
+.dir-rtl .swiper-slide {
+  direction: rtl;
+}
+
+
+/* Test Purpose */
+.offcanvas-area {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .offcanvas {
+    max-width: 70%;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    animation: rotate 6s linear infinite;
+  }
+  
+  
+  
